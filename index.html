@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <div id="resultat"></div>
+    <button onclick="mostrarTodo()">Mostrar Todo</button>
+    <button onclick="reload()">Click para recargar</button>
+    <button onclick="ordenaLlista('asc')">Ordenar Ascendente</button>
+    <button onclick="ordenaLlista('desc')">Ordenar Descendente</button>
+    <input type="text" id="nombrePokemon" placeholder="Introduce el nombre del Pokémon">
+    <button onclick="buscarPorNombre()">Buscar</button> 
+    <button onclick="calcMitjana()">Media</button>
+    <button onclick="crearGrafico()">Crear Gráfico</button>
+
+    
+    <div id="tableContainer">
+        
+    </div>
+    <div style="width:700px">
+        <canvas id="myChart" ></canvas>
+    </div>
+</body>
+</html>
